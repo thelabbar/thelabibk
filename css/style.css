@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+	--blau: #161926;
+}
+
+:root {
+	--gold: #F2CD5E;
+}
+
+html, body{
+	height: 100%;
+	background-color:var(--blau);
+	color:#fff;
+	margin: 0;
+    padding: 0;
+}
+
+h1{
+	font-family: 'Oswald';
+}
+
+h2{
+    font-size: 30pt;	
+	font-family: 'Oswald';
+}
+
+h3{
+    font-size: 15pt;
+	font-family: 'Oswald';
+}
+
+nav{
+	background-color:var(--blau)!important;
+	border:0.5px solid var(--gold);
+	position:relative;
+	z-index: 9999;
+}
+
+header {
+	width: 100%;
+}
+
+.headervideo {
+    z-index: -99;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    opacity: 60%;  
+}
+
+span{
+	color:var(--gold)!important;
+}
+
+.navbar-nav li a.nav-link{
+	color: var(--gold)!important;
+	letter-spacing: 2px;
+}
+
+.navbar-nav li a.nav-link:hover{
+    color:#fff!important;
+}
+
+/* Das Hero Image */
+.hero-image {
+	/* Mit "linear-gradient" wird das Hintergrundbild (images/photographer.jpg) abgedunkelt, damit der Text leichter lesbar ist */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 0.5)),
+					url("../images/hero.png");
+
+	/* Höhe des Hero-Images festlegen */
+	height: 100vh; /* 50vh macht das Hero-Image nur halb so hoch */
+
+	/* Ausrichtung und Zentrierung des Bildes, damit es auf allen Bildschirmen gut aussieht */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+	clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+	
+	background-color:var(--blau);
+}
+
+.hero-image2 {
+	/* Mit "linear-gradient" wird das Hintergrundbild (images/photographer.jpg) abgedunkelt, damit der Text leichter lesbar ist */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 0.5)),
+					url("../images/tisch2.jpg");
+
+	/* Höhe des Hero-Images festlegen */
+	height: 100vh; /* 50vh macht das Hero-Image nur halb so hoch */
+
+	/* Ausrichtung und Zentrierung des Bildes, damit es auf allen Bildschirmen gut aussieht */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+	clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+	
+	background-color:var(--blau);
+	
+}
+
+.hero-image3 {
+	/* Mit "linear-gradient" wird das Hintergrundbild (images/photographer.jpg) abgedunkelt, damit der Text leichter lesbar ist */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 0.5)),
+					url("../images/steak.jpg");
+
+	/* Höhe des Hero-Images festlegen */
+	height: 100vh; /* 50vh macht das Hero-Image nur halb so hoch */
+
+	/* Ausrichtung und Zentrierung des Bildes, damit es auf allen Bildschirmen gut aussieht */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+	background-color:var(--blau);
+	border-top:2px solid var(--gold);
+	border-bottom:2px solid var(--gold);
+}
+
+.hero-text {
+	z-index: 999;
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+
+.hg-white{
+	background-color: #fff;
+	color: var(--blau);
+}
+
+.hg-blue{
+	background-color: var(--blau);
+	color: var(--gold);
+}
+
+.rombus{
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.navbar-toggler{
+	color:var(--gold);
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--gold); /* Set a background color */
+    color: var(--blau); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+	line-height: 24px; /* Set the line-height for better alignment inside the box */
+	text-decoration: none;
+}
+
+#myBtn:hover {
+    background-color: #fff; /* Add a dark-grey background on hover */
+	text-decoration: none;
+	border: 1px solid var(--blau);
+}
+
+.rahmen{
+	border-radius: 20px;
+	border:1px solid var(--gold);
+	box-shadow: 2px 2px 20px 1px #000;
+}
+
+.button{
+	text-align:center;
+	color:var(--gold);
+    border: 1px solid var(--gold);
+	border-radius: 20px;
+	padding:5px 10px;
+}
+
+.button:hover{
+	
+	text-decoration:none;
+	color:#fff;
+    border: 1px solid #fff;
+	border-radius: 20px;
+	padding:5px 10px;
+	background-color:var(--blau);
+}
+
+form{
+	padding:15px;
+	font-family:'Oswald';
+	font-weight: 400;
+	text-align:center;
+}
+
+legend{
+	color:var(--gold);
+	margin:10px;
+}
+
+input[type="submit"]{
+	background-color:var(--gold);
+	border-radius: 20px;
+	padding:5px 10px;
+}
+
+input[type="submit"]:hover{
+	color:#fff;
+	border-radius: 20px;
+	padding:5px 10px;
+	background-color:var(--blau);
+}
+
+hr{
+	border:solid var(--gold) 1px;
+}
+
+.hg-bild{
+    background-image: url(../images/tisch1.jpg);	
+}
+
+.fa-2xl{
+	padding:8px;
+}
+
+.width{
+	width:300px;
+	margin:10px;
+}
